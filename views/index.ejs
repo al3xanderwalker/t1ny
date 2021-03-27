@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>T1ny</title>
+    <meta property="og:title" content="T1ny" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://t.alexjw.dev/" />
+    <meta property="og:description" content="T1ny URL Shortener" />
+    <meta name="theme-color" content="#277BE9" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="titleBar">
+        <a href="/" class="title"><h1 class="titletext">T1ny</h1></a>
+      </div>
+    </header>
+    <main>
+      <div>
+        <div class="hello">URL Shrinker</div>
+        <form action="/shortUrls" method="POST" class="my-4 form-inline">
+          <input
+            required
+            placeholder="Paste Your URL Here"
+            type="url"
+            name="fullUrl"
+            id="fullUrl"
+            class="form-control col mr-2"
+          />
+          <button class="form-btn" type="submit">Shrink</button>
+        </form>
+      </div>
+    </main>
+    <footer>Copyright © 2020 Alex Walker. All rights reserved.</footer>
+  </body>
+</html>

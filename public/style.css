@@ -1,0 +1,150 @@
+@font-face {
+  font-family: japoki;
+  src: url(japoki-reg.ttf);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #277be9;
+}
+body {
+  margin: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  background: url('https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')
+    no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: brightness(40%);
+}
+
+header {
+  color: white;
+  background: #141517;
+  display: grid;
+  grid-template-columns: 5fr 5fr 1fr;
+  grid-auto-rows: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.navbtn {
+  color: white;
+  transition: all 0.5s ease-in;
+  padding: 5px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.navbtn:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+main {
+  display: grid;
+  place-items: center;
+  overflow-y: scroll;
+}
+.about {
+  display: grid;
+  place-items: center;
+}
+#dropdown {
+  display: none !important;
+}
+footer {
+  background: #141517;
+  font-size: 10px;
+  font-weight: 100;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.title {
+  text-decoration: none;
+  color: white;
+}
+.titletext {
+  margin-left: 1rem;
+  float: left;
+}
+
+.hello {
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+.profession {
+  padding-left: 6px;
+  font-size: 30px;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .titletext {
+    margin-top: 1rem;
+  }
+
+  .hello {
+    font-size: 70px;
+  }
+  .profession {
+    font-size: 21px;
+  }
+}
+.text-white {
+  color: white;
+}
+.navbtn.active {
+  color: rgb(39, 123, 233);
+}
+input {
+  border: 1px solid white !important;
+  margin-left: 6px;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: inline-block;
+  width: 50%;
+  border: none;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-bottom: 1px solid #757575;
+}
+.form-btn {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: inline-block;
+  min-width: 75px;
+  width: 10%;
+  border: none;
+  border-radius: 3px;
+  background: #277be9;
+  color: white;
+}
+.copy-btn {
+  width: 40%;
+  text-align: center;
+  margin-left: 6px;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 15px 15px 15px 15px;
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  background: #277be9;
+  color: white;
+}
+.copy-btn:hover {
+  cursor: pointer;
+}
+.success {
+  background: #21b86a;
+}

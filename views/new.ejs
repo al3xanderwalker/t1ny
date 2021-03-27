@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>T1ny</title>
+    <meta property="og:title" content="T1ny" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://t.alexjw.dev/" />
+    <meta property="og:description" content="T1ny URL Shortener" />
+    <meta name="theme-color" content="#277BE9" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="titleBar">
+        <a href="/" class="title"><h1 class="titletext">T1ny</h1></a>
+      </div>
+    </header>
+    <main>
+      <div>
+        <div class="hello">URL Shrunk!</div>
+        <a class="copy-btn" type="submit" onclick="copy(this);"
+          >Copy To Clipboard</a
+        ><a href="/" class="copy-btn" type="submit">Create New Link</a>
+      </div>
+    </main>
+    <footer>Copyright © 2020 Alex Walker. All rights reserved.</footer>
+    <script>
+      function copy(btn) {
+        navigator.clipboard.writeText('t.alexjw.Dev/<%= code %>');
+        btn.classList.add('success');
+        btn.innerText = 'Copied!';
+        setTimeout(() => {
+          btn.classList.remove('success');
+          btn.innerText = 'Copy To Clipboard';
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
